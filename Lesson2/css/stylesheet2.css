@@ -1,33 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Cormorant+Garamond&family=Montserrat:wght@100;200;400&family=Playfair+Display:wght@400;600&display=swap');
+
 header {
-    line-height: 60%;
+    line-height: 90%;
     padding-top: 50px;
     padding-bottom: 20px;
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
 }
 
 body {
     max-width: 1050px;
     margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
 }
+
 
 img {
     width: 70%;
     border-radius: 15px;
+    filter: drop-shadow(10px 10px 50px #adadb0);
+    margin-bottom: 20px;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(5px 5px 30px #d2d2d7);
+    transition: transform 1s ease;
+    
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: auto;
+    grid-gap: 15px;
 }
 
 div {
     text-align: center;
 }
 
+
 div p {
     text-align: justify;
-    padding: 30px;
+    padding: 20px 50px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    text-indent: 30px;
+    font-size: .75em;
+    word-spacing:-2.1px;
+    line-height: 130%;
+}
+
+h2 {
+    font-family: 'Playfair Display', serif;
 }
 
 .dp1 {
@@ -42,8 +71,18 @@ div p {
     grid-template-columns: 3/4;
 }
 
+div a {
+    text-decoration: none;
+    color:grey;
+}
+
+a:hover {
+    color:lightsalmon;
+}
+
 footer p {
     text-align: center;
+    font-weight: 400;
 }
 
 @media only screen and (max-width: 850px) {
@@ -105,5 +144,9 @@ footer p {
         padding-top: 0;
         margin: 20px;
     }
+
+    h1 {
+        font-size: 1em;
+    }   
 
 }

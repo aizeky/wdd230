@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Cormorant+Garamond&family=Montserrat:wght@100;200;400&family=Playfair+Display:wght@400;600&display=swap');
+
+header {
+    padding: 50px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    max-width: 600px;
+    margin: auto;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div a {
+    text-decoration: none;
+    color:grey;
+}
+
+div {
+    text-align: center;
+}
+
+
+div p {
+    text-align: justify;
+    padding: 20px 50px;
+    font-family: 'Arimo', sans-serif;
+    font-weight: 400;
+    text-indent: 30px;
+    font-size: .75em;
+    word-spacing:-2.1px;
+    line-height: 130%;
+}
+
+a:hover {
+    color:lightsalmon;
+}
+
+
+img {
+    width: 70%;
+    border-radius: 15px;
+    filter: drop-shadow(10px 10px 50px #adadb0);
+    margin-bottom: 20px;
+    }
+
+p {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+h2 {
+    padding-top: 0;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}   
+
+footer p {
+    text-align: center;
+    font-weight: 400;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(5px 5px 30px #d2d2d7);
+    transition: transform 1s ease;
+}
+
+@media only screen and (min-width: 601px) {
+
+
+    #grid {
+     
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* .dp1 {
+        grid-column: 1/2;
+    }
+
+    .dp2 {
+        grid-column: 2/3; 
+    }
+
+    .dp3 {
+        grid-column: 1/2;
+    } */
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (min-width: 960px) {
+
+    header {
+        line-height: 90%;
+        padding-top: 50px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 2em;
+    }
+    
+    body {
+        max-width: 1050px;
+        margin: auto;
+        font-family: 'Playfair Display', serif;
+        font-weight: 200;
+    }
+
+    #grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: auto;
+        grid-gap: 15px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+   
+    
+    h2 {
+        font-family: 'Playfair Display', serif;
+    }
+    
+    /* .dp1 {
+        grid-template-columns: 1/2;
+    }
+    
+    .dp2 {
+        grid-template-columns: 2/3;
+    }
+    
+    .dp3 {
+        grid-template-columns: 3/4;
+    } */
+    
+    
+    
+    
+}
