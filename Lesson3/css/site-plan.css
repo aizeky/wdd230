@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500&family=Cormorant+Garamond&family=Fjalla+One&family=Montserrat:wght@100;200;400&family=Playfair+Display:wght@400;600&display=swap');
+
+html {
+    background-color: white;
+    
+}
+
+body {
+    max-width: 415px;
+    background-color: white;
+    margin: auto;
+    width: 100%;
+}
+
+
+header {
+    padding: 20px 0;
+    width: 100%;
+    background-color: #8B9386;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+}
+
+nav a {   
+    color: #F0F0EB;
+}
+
+nav li:hover {
+    transform: scale(1.2);
+    text-shadow: -1px 1px 8px #4D4D3D, 1px -1px 8px #4D4D3D;
+    transition: transform .9s ease;
+}
+
+main {
+    padding: 40px 35px 40px 35px;
+    width: 80%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width:10%;
+}
+
+.color_scheme {
+    width: 100%;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 800;
+    padding: 20px 0;
+    color: #F0F0EB;
+}
+
+h2 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h3 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+h4 {
+    font-family: 'Fjalla One', sans-serif;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+footer {
+    
+    padding: 20px 30px;
+    width: 100%;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+    
+
+}
+
+@media only screen and (min-width: 650px) {
+    body {
+        width: 90%;
+        max-width: 850px;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }        
+    
+}
+
+@media only screen and (min-width: 900px) {
+    body {
+        margin: auto;
+        max-width: 100%;
+    }
+    
+    html {
+        width: 100%;
+    }
+  
+
+
+}
