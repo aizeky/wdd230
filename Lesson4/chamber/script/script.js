@@ -1,3 +1,10 @@
+const weekDay = new Date();
+const message = document.querySelector('.announcement');
+
+            if (weekDay.getDay() == 1 || weekDay.getDay() == 2) {
+                message.style.display = 'block';
+}
+
 let currentdate= document.lastModified;
 document.getElementById('modified').textContent = 'Last Updated: '+ currentdate + ".";
 
@@ -17,6 +24,7 @@ now
 const fulldateUK = new Intl.DateTimeFormat("en-UK", {
 dateStyle: "full"
 }).format(now);
+
 // long, medium, short options ... try them
 
 datefield.innerHTML = `<em>${fulldate}</em>`;
