@@ -16,33 +16,36 @@ html {
    text-align: center;
    margin: auto;
    font-size: .8em;
-   background-color: whitesmoke;
+   background-color: orange;
+   color: white;
 }
 
 .announcement h3 {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 
 header {
     display: grid;
-    grid-template-columns: 70% 15% 15%;
+    grid-template-columns: 60% 40%;
     align-items: left;
 }
 
 date {
     text-align: center;
-    grid-column: 2/4;
-    padding-top: 10px;
+    grid-column: 2/3;
+    padding: 0 10px;
     font-style: normal;   
-    font-size: .9em;
+    font-size: .8em;
     font-family: 'Playfair Display', serif;
+    margin: auto;
+    margin-right: 20px;
     
 }
 
 .logo {
     grid-column: 1/2;
-    width: 250px;
+    width: 200px;
 }
 
 
@@ -80,13 +83,18 @@ nav li:hover {
     transition: transform .7s ease;
 }
 
+
+
 li a {
     text-decoration: none;
+    color: orange;
 }
 
 li a:hover {
-    color: lightsalmon;
+    color: gray;
 }
+
+
 
 h3 {
     font-family: 'Oswald', sans-serif;
@@ -125,6 +133,11 @@ div p {
     border: none;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.hero_btn:hover {
+    transform: scale(1.1);
+    transition: transform .7s ease;
 }
 
 .welcome {
@@ -197,6 +210,7 @@ footer {
     font-size: .8em;
     text-align: center;
     grid-gap: 10px;
+    padding-bottom: 20px;
 }
 
 .footer_logo {
@@ -225,13 +239,17 @@ footer {
 @media screen and (min-width: 650px) {
 
     header {
-        grid-template-columns: 50% 25% 25%;
+        grid-template-columns: 50% 50%;
+        padding-top: 20px;
+    }
+
+    .logo {
+        margin:auto;
     }
 
     date {
         text-align: right;
-        margin-top:15px;
-        margin-right: 50px;
+        margin: auto;
     }
 
     ul {
@@ -354,7 +372,23 @@ footer {
 
 
     header {
-        grid-template-columns: 40% 30% 30%;
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .logo {
+        grid-column: 1/2;
+        margin-right: 0;
+        justify-items: right;
+    }
+
+    date {
+        grid-column: 2/3;
+        padding-left: 37px;
+        text-align: left;
+        padding-top: 0;
+        margin: auto;
+        margin-left: 0;
     }
 
     main {
@@ -450,14 +484,6 @@ footer {
     nav {
         grid-column: 2/4;
         margin: 30px 0;
-    }
-
-    date {
-        grid-column: 1/4;
-        padding-left: 37px;
-        text-align: left;
-        margin-top: 0;
-        padding-top: 0;
     }
 
     footer {

@@ -10,10 +10,10 @@
 </head>
 <body>
     <div  class="announcement">
-        <h3>🤝🏼 Come join us for the Chamber Meet and Greet. Wednesday at 7:00 p.m.</h3>
+        <h3>👋 Come join us for the Chamber Meet and Greet. Wednesday at 7:00 p.m. 🤝</h3>
     </div>
     <header>
-        <img class="logo" src="images/rexburg-chamber-logo.jpg" alt="company logo">
+        <img class="logo" src="images/rexburg-chamber-logo.webp" alt="company logo">
         <date></date>
     </header>
 
@@ -31,8 +31,11 @@
     <main>
         <div class="hero">
             
-            
-            <img class="rexburg_img"src="images/Rexburg-ID.jpeg" alt="image of rexburg">
+            <img class="rexburg_img" srcset="images/small-hero 480px, images/medium-hero 800px"
+            sizes="(max-width: 1080px) 480px,750px"
+            src="images/large-hero.jpg">
+
+            <!-- <img class="rexburg_img"src="images/Rexburg-ID.jpeg" alt="image of rexburg"> -->
             <p class="welcome">Welcome to <b>Rexburg</b></p>
             <button class="hero_btn">Sign Up</button>
            
@@ -44,6 +47,7 @@
         <div class="weather">
             <h3>Weather |  27°☁️</h3>
             <p>Partly cloudy. High 27F. Winds light and variable.</p>
+            <li>Wind Chill: <span id="windChill"></span>&deg;</li>
         </div>
         <div class="news">
             <h3>Valentine’s Day Market pop-up shop to be held Saturday</h3>
@@ -93,5 +97,6 @@
     </footer>
 
     <script src="script/script.js"></script>
+    <script src="script/windchill.js"></script>
 </body>
 </html>
