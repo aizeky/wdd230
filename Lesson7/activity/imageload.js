@@ -1,6 +1,6 @@
 const images = document.querySelectorAll('img');
 
-const options = {threshold: [.2]}
+const options = {threshold: [.9]}
 
 function preloadImage(img) {
     const source = img.getAttribute('data-src');
@@ -10,7 +10,7 @@ function preloadImage(img) {
 const io = new IntersectionObserver(
     (entries, io) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting){
+            if (!entry.isIntersecting){
                 return;
             } else {
                 preloadImage(entry.target) //call a function, send in the image that is currently intersecting
