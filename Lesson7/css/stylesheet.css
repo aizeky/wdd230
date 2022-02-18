@@ -1,0 +1,26 @@
+body {
+    width: 950px;
+    margin: auto;
+}
+
+main {
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr ;
+    /* grid-template-rows: 600px; */
+    grid-gap: 15px;
+}
+
+.image {
+    height: 500px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    overflow: hidden;
+}
+

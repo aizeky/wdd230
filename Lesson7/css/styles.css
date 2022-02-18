@@ -1,0 +1,513 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Playfair+Display:wght@400;600&display=swap');
+
+html {
+    width: 100%;
+}
+
+.saturday {
+    background-color: white;
+    padding: 0;
+}
+
+.announcement {
+   display: none;
+   text-align: right;
+   grid-column: 1/2;
+   text-align: center;
+   margin: auto;
+   font-size: .8em;
+   background-color: orange;
+   color: white;
+}
+
+.announcement h3 {
+    padding: 10px 0;
+}
+
+
+header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: left;
+}
+
+date {
+    text-align: center;
+    grid-column: 2/3;
+    padding: 0 10px;
+    font-style: normal;   
+    font-size: .8em;
+    font-family: 'Playfair Display', serif;
+    margin: auto;
+    margin-right: 20px;
+    
+}
+
+.logo {
+    grid-column: 1/2;
+    width: 200px;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+li {
+    display: none;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ham {
+    display: block;
+}
+
+.responsive {
+    line-height: 1.7em;
+    font-size: 16px;
+    border: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav li:hover {
+    transform: scale(1.2);
+    transition: transform .7s ease;
+}
+
+
+
+li a {
+    text-decoration: none;
+    color: orange;
+}
+
+li a:hover {
+    color: gray;
+}
+
+
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    line-height: 1.1em;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+main div {
+    height: 200px;
+    padding: 0 15px;
+    background-color: whitesmoke;
+    margin: 10px 0;
+}
+
+div p {
+    font-family: 'Playfair Display', serif;
+    font-size: .8em;
+}
+
+.rexburg_img {
+    width:100%;
+}
+
+.hero_btn {
+    /* position:absolute;
+	top: 350px;
+	right: 45px; */
+    position:absolute;
+    top: 65%;
+    left: 65%;
+    background-color: white;
+    color: orange;
+    font-size: .8em;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero_btn:hover {
+    transform: scale(1.1);
+    transition: transform .7s ease;
+}
+
+.welcome {
+    position:absolute;
+    top: 25%;
+    left: 10%;
+    color: white;
+    font-size: 1em;
+}
+
+.hero {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.weather {
+    background-color:lightblue;
+}
+
+.weather:hover {
+    transform: scale(1.05);
+    transition: transform .7s ease;
+}
+
+.join  {
+    display: none;
+}
+
+.spotlight {
+    height: 500px;
+}
+
+.spotlight div {
+    padding: 20px 20px;
+    margin: 0;
+}
+
+.sp1 h3 {
+    text-align: center;
+    margin-top: 25px;
+    
+}
+
+.spotlight h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0;
+    color:orange;
+    }
+
+.sp1 {
+    padding-top: 30px;
+    height: 150px;
+ 
+}
+
+.sp3 {
+    display: none;
+}
+
+
+footer {
+    display: grid;
+    grid-template-rows: 70px 70px 70px 70px;
+    width: 95%;
+    position: absolute;
+    line-height: 10px;
+    font-size: .8em;
+    text-align: center;
+    grid-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.footer_logo {
+    width:200px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.map {
+    margin: auto;
+}
+
+.footer_info p {
+    margin: 5px 0;
+    padding: 5px 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+.footer_legal p{
+    margin: 0 auto;
+    padding-top:10px;
+}
+
+
+
+@media screen and (min-width: 650px) {
+
+    header {
+        grid-template-columns: 50% 50%;
+        padding-top: 20px;
+    }
+
+    .logo {
+        margin:auto;
+    }
+
+    date {
+        text-align: right;
+        margin: auto;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    footer {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px 100px;
+        font-size: 1em;
+    }
+
+    .footer_logo {
+        grid-column: 1/2;
+        margin: auto;
+        padding: 0;
+    }
+
+    .footer_info {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin: auto;
+    }
+
+    .map {
+        margin: auto;
+        grid-column: 3/4;
+    }
+
+    
+    .footer_legal {
+        grid-column: 1/4;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+
+    main div {
+        margin: 0;
+    }
+
+
+    .hero {
+        grid-row: 1/2;
+        grid-column:1/4;
+    }
+
+    .hero_btn {
+        top: 40%;
+        left: 80%;
+    }
+
+    .welcome {
+        top: 32%;
+        left:8%;
+        font-size: 1.3em;
+    }
+
+    .news {
+        grid-row: 2/3;
+        grid-column:1/4;
+    }
+
+    .spotlight {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row: 3/4;
+        grid-column:1/4;
+        height: auto;
+    }
+
+    .spotlight div p {
+        padding: 20px 0;
+    }
+
+    .spotlight div {
+        width: auto;
+        height: 150px;
+    }
+
+    .sp1 {
+        grid-column: 1/2;
+    }
+
+    .sp2 {
+        grid-column: 2/3;
+    }
+
+    .join {
+        display: inline-block;
+        grid-row: 4/5;
+        grid-column:1/4;
+    }
+
+    .event {
+        display: inline-block;
+        width:auto;
+        grid-row: 5/6;
+        grid-column:1/3;
+    }
+
+    .weather {
+        float: left;
+        width: auto;
+        grid-row: 5/6;
+        grid-column:3/4;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    html {
+        max-width: 1080px;
+        margin: auto;
+    }
+
+
+    header {
+        grid-template-columns: 50% 50%;
+
+    }
+
+    .logo {
+        grid-column: 1/2;
+        margin-right: 0;
+        justify-items: right;
+    }
+
+    date {
+        grid-column: 2/3;
+        padding-left: 37px;
+        text-align: left;
+        padding-top: 0;
+        margin: auto;
+        margin-left: 0;
+    }
+
+    main {
+        padding: 0 35px;
+        grid-template-columns: 20% 30% 25% 25%;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+
+
+    .event {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        height: auto;
+    }
+
+    .weather {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        height: auto;
+    }
+
+    .join {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        height: auto;
+    }
+
+    .hero {
+        height: auto;
+        grid-column: 2/4;
+        grid-row: 1/3;
+    }
+
+    .hero_btn {
+        top: 50%;
+        left: 40%;
+    }
+
+    .welcome {
+        top: 33%;
+        left: 31%;
+        font-size: 1.3em;
+    }
+
+    .rexburg_img {
+        height: 100%;
+    }
+
+    .news {
+        grid-column: 2/4;
+        grid-row: 3/4;
+        height: auto;
+    }
+
+    .spotlight {
+        display: block;
+        grid-column: 4/5;
+        grid-row: 1/4;
+        padding: 0;
+    }
+
+    .sp2 {
+        padding: 0;
+    }
+
+    .sp3 {
+        display: block;
+        padding: 0;
+    }
+
+    .sp2 h3, .sp3 h3 {
+        padding-top: 0;
+    }
+
+    .sp2 p, .sp3 p {
+        margin: 0;
+        padding: 0;
+    }
+
+    .ham {
+        display: none;
+    }
+
+    li {
+        display: block;
+    }
+
+    ul {
+        flex-direction: row;
+    }
+
+    nav {
+        grid-column: 2/4;
+        margin: 30px 0;
+    }
+
+    footer {
+        grid-template-columns: 20% 22% 20% 38%;
+        grid-template-rows: 1fr;
+        max-width: 1080px;
+        padding-top: 30px;
+    }
+
+    .footer_info {
+        grid-column: 3/4;
+    }
+
+    .map {
+        grid-column: 2/3;
+    }
+
+    .footer_legal {
+        grid-column: 4/5;
+        margin: auto;
+    }
+
+
+
+ 
+}
+
