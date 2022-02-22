@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Playfair+Display:wght@400;600&display=swap');
+
 body {
     width: 950px;
     margin: auto;
@@ -9,18 +11,113 @@ main {
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr ;
-    /* grid-template-rows: 600px; */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 250px 250px;
     grid-gap: 15px;
 }
 
 .image {
-    height: 500px;
+    /* height: 500px; */
     overflow: hidden;
 }
 
 img {
-    width: 100%;
+    width:auto;
     overflow: hidden;
+    object-fit: fill;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: left;
+}
+
+date {
+    text-align: center;
+    grid-column: 2/3;
+    padding: 0 10px;
+    font-style: normal;   
+    font-size: .8em;
+    font-family: 'Playfair Display', serif;
+    margin: auto;
+    margin-right: 20px;
+    
+}
+
+.logo {
+    grid-column: 1/2;
+    width: 200px;
+}
+
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+li {
+    display: none;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ham {
+    display: block;
+}
+
+.responsive {
+    line-height: 1.7em;
+    font-size: 16px;
+    border: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+nav li:hover {
+    transform: scale(1.2);
+    transition: transform .7s ease;
+}
+
+
+li a {
+    text-decoration: none;
+    color: orange;
+}
+
+li a:hover {
+    color: gray;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+    transition: transform .7s ease;
+
+}
+
+@media screen and (min-width: 850px) {
+
+.ham {
+    display: none;
+}
+
+li {
+    display: block;
+}
+
+ul {
+    flex-direction: row;
+}
+
+nav {
+    grid-column: 2/4;
+    margin: 30px 0;
+}
+
+}
