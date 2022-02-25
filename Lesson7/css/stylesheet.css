@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Playfair+Display:wght@400;600&display=swap');
 
-body {
-    width: 950px;
-    margin: auto;
-}
 
-main {
-    width: 100%;
-}
 
 .gallery {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 250px 250px 250px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 250px;
     grid-gap: 15px;
 }
 
+.gallery div {
+    width: 100%;
+    overflow: hidden;
+}
+
 .image {
-    /* height: 500px; */
+    height: 250px;
+    width: 365px;
     overflow: hidden;
 }
 
@@ -98,26 +97,55 @@ li a:hover {
 .gallery img:hover {
     transform: scale(1.04);
     transition: transform .7s ease;
+}
 
+.gallery div:hover {
+    box-shadow: 0 0 20px gray;
+}
+
+@media screen and (min-width: 600px) {
+   
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media screen and (min-width: 850px) {
 
-.ham {
-    display: none;
+    body {
+        width: 950px;
+        margin: auto;
+    }
+    
+    main {
+        width: 100%;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 250px 250px 250px;
+        grid-gap: 15px;
+    }
+    
+    .ham {
+        display: none;
+    }
+    
+    li {
+        display: block;
+    }
+    
+    ul {
+        flex-direction: row;
+    }
+    
+    nav {
+        grid-column: 2/4;
+        margin: 30px 0;
+    }
+    
+
 }
 
-li {
-    display: block;
-}
-
-ul {
-    flex-direction: row;
-}
-
-nav {
-    grid-column: 2/4;
-    margin: 30px 0;
-}
-
-}
