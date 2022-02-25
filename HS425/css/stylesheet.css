@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Red+Hat+Display:wght@300;400;600&family=Ubuntu:wght@300;500&display=swap');
+html {
+    width: 100%;
+}
+
+body {
+    margin: auto;
+    width:fit-content;
+    padding: 0 20px;
+}
+
+iframe {
+   width: fit-content;
+   margin: 0 auto;
+}
+
+main {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+h1, h2, h3 {
+    font-family: 'Domine', serif;
+    font-weight: 500;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px black solid;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+footer {
+    padding: 30px;
+}
+
+@media screen and (min-width: 540px) {
+    body {
+        max-width: 600px;
+    }
+
+    iframe {
+        width:80%;
+        height: 290px;
+    }
+
+    
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        max-width: 950px;
+    }
+
+    iframe {
+        width:70%;
+        height: 380px;
+    }
+
+    
+}
