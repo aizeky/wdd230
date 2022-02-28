@@ -47,6 +47,7 @@ footer {
     padding: 30px;
 }
 
+
 @media screen and (min-width: 540px) {
     body {
         max-width: 600px;
