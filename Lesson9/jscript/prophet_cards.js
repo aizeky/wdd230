@@ -52,5 +52,5 @@ fetch(requestURL)
 
 
   // event for resizing a reloading the page
-  window.addEventListener('resize', changeStyles);
-  window.addEventListener('load', changeStyles);
+  // window.addEventListener('resize', changeStyles);
+  // window.addEventListener('load', changeStyles);
