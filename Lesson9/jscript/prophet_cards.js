@@ -39,16 +39,16 @@ fetch(requestURL)
   //   item.remove();
   // })
 
-  function changeStyles() {
+//   function changeStyles() {
 
-    if (window.innerWidth > 800 && window.innerWidth < 1000) {
+//     if (window.innerWidth > 800 && window.innerWidth < 1000) {
 
  
 
-  let change = document.querySelector('.cards');
-  change.setAttribute('style', 'background-color: pink; border: 5px solid black; display: block;')
-  }
-}
+//   let change = document.querySelector('.cards');
+//   change.setAttribute('style', 'background-color: pink; border: 5px solid black; display: block;')
+//   }
+// }
 
 
   // event for resizing a reloading the page

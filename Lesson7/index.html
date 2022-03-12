@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="This is a chamber of commerce website">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Chamber of Commerce Site</title>
 </head>
@@ -32,11 +31,11 @@
     <main>
         <div class="hero">
             
-            <img class="rexburg_img" srcset="images/small-hero 480px, images/medium-hero 800px"
+            <!-- <img class="rexburg_img" srcset="images/small-hero 480px, images/medium-hero 800px"
             sizes="(max-width: 1080px) 480px,750px"
-            src="images/large-hero.jpg">
+            src="images/large-hero.jpg"> -->
 
-            <!-- <img class="rexburg_img"src="images/Rexburg-ID.jpeg" alt="image of rexburg"> -->
+            <img class="rexburg_img"src="images/Rexburg-ID.jpeg" alt="image of rexburg">
             <p class="welcome">Welcome to <b>Rexburg</b></p>
             <button class="hero_btn">Sign Up</button>
            
@@ -46,8 +45,8 @@
             <p>Come participate in the Shumway Academy Color Fun Run on June 26.</p>
         </div>
         <div class="weather">
-            <h3>Weather |  27°☁️</h3>
-            <p>Partly cloudy. High 27F. Winds light and variable.</p>
+           <h3>Weather |  <span id="current-temp"></span>°<img src="" alt="" id="weathericon"/> </h3>
+            <p>Current Conditon: <br> <b><span id="icon-src"></span></b></p>
             <li>Wind Chill: <span id="windChill"></span>&deg;</li>
         </div>
         <div class="news">
@@ -98,6 +97,7 @@
     </footer>
 
     <script src="jscript/script.js"></script>
-    <script src="script/windchill.js"></script>
+    <!-- <script src="jscript/windchill.js"></script> -->
+    <script src="jscript/weather.js"> </script>
 </body>
 </html>

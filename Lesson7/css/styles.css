@@ -94,6 +94,30 @@ li a:hover {
     color: gray;
 }
 
+.weather {
+    margin: auto;
+    padding: 15% 10% 0 10%;
+    background-color:lightblue;
+}
+.weather h3 {
+    display:block;
+    /* justify-content:space-between; */
+}
+
+.weather p {
+    margin: 0;
+}
+
+.weather li {
+    display: block;
+    margin:auto;
+    text-align: left;
+}
+
+#weathericon {
+    float: right;
+    width: 100px;
+}
 
 
 h3 {
@@ -155,13 +179,13 @@ div p {
     
 }
 
-.weather {
-    background-color:lightblue;
-}
-
 .weather:hover {
     transform: scale(1.05);
     transition: transform .7s ease;
+}
+
+.news {
+    padding-bottom: 10%;
 }
 
 .join  {
@@ -182,6 +206,8 @@ div p {
     margin-top: 25px;
     
 }
+
+
 
 .spotlight h2 {
     text-align: center;
@@ -361,6 +387,31 @@ footer {
         grid-row: 5/6;
         grid-column:3/4;
     }
+
+    .weather {
+        padding: 0  10%;
+        background-color:lightblue;
+    }
+    .weather h3 {
+        display:block;
+        /* justify-content:space-between; */
+    }
+    
+    .weather p {
+        margin: 0;
+    }
+    
+    .weather li {
+        display: block;
+        margin:auto;
+        text-align: left;
+    }
+    
+    #weathericon {
+        float: right;
+        width: 100px;
+    }
+    
 }
 
 @media screen and (min-width: 850px) {
@@ -486,6 +537,25 @@ footer {
         margin: 30px 0;
     }
 
+    .weather h3 {
+        display:flex;
+        justify-content:space-between;
+    }
+    
+    .weather p {
+        margin: 0;
+    }
+    
+    .weather li {
+        margin:auto;
+        text-align: left;
+    }
+    
+    #weathericon {
+        margin:0;
+        
+    }
+
     footer {
         grid-template-columns: 20% 22% 20% 38%;
         grid-template-rows: 1fr;
@@ -504,6 +574,32 @@ footer {
     .footer_legal {
         grid-column: 4/5;
         margin: auto;
+    }
+
+    .weather {
+        height: 200px;
+        margin: 0;
+    }
+
+    .weather h3 {
+        display:flex;
+        justify-content:space-between;
+        font-size: 1em;
+    }
+    
+    .weather p {
+        margin: 0;
+    }
+    
+    .weather li {
+        margin:auto;
+        text-align: left;
+    }
+    
+    #weathericon {
+        margin:0;
+        width: auto;
+        
     }
 
 

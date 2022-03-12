@@ -24,3 +24,18 @@
     width: 90%;
     box-shadow: 5px 10px 8px 5px #888888;
     }
+
+    .cards.list {
+        display: block;
+    }
+
+    .cards.list section {
+        display: flex;
+        justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .cards.list section img {
+        width: 30%;
+    }
