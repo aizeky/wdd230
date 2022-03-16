@@ -14,6 +14,10 @@ iframe {
    margin: 0 auto;
 }
 
+div img {
+    width: 70%;
+}
+
 main {
     font-family: 'Red Hat Display', sans-serif;
     font-weight: 400;
@@ -54,8 +58,8 @@ footer {
     }
 
     iframe {
-        width:80%;
-        height: 290px;
+        width:fit-content;
+        /* height: 290px; */
     }
 
     
@@ -69,6 +73,11 @@ footer {
     iframe {
         width:70%;
         height: 380px;
+    }
+
+    div img {
+        display:inline-flexbox;
+        max-width: 50%;
     }
 
     
