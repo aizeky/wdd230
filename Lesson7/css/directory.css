@@ -40,6 +40,20 @@
         text-align: center;
         font-family: 'Oswald', sans-serif;
     }
+
+    li a {
+        text-decoration: none;
+        color: orange;
+    }
+    
+    li a:hover {
+        color: gray;
+    }
+
+    nav li:hover {
+        transform: scale(1.2);
+        transition: transform .7s ease;
+    }
     
     .cards {
     display: flex;
@@ -53,11 +67,11 @@
 
     .cards section {
     border: 0px solid navy;
-    background-color: lightgrey;
+    background-color: lightgray;
     padding: 30px;
     text-align: center;
     width: 200px;
-    margin: 20px;
+    margin: 5px;
     }
 
     h2, h1 {
