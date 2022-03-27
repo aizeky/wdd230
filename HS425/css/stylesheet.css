@@ -36,6 +36,33 @@ h1, h2, h3 {
     font-weight: 500;
 }
 
+.begin  {
+    border: 2px dodgerblue solid;
+    border-radius: 25px;
+}
+
+.begin h3 {
+    background-color: dodgerblue;
+    color: white;
+    text-indent: 2.5%;
+    padding: 15px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.begin li {
+    border: 1px whitesmoke solid;
+    padding: 10px 0;
+    text-indent: 5%;
+}
+
+.begin ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 table {
     margin: auto;
     border-collapse: collapse;

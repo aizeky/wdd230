@@ -130,7 +130,7 @@ h3 {
 main div {
     height: 200px;
     padding: 0 15px;
-    background-color: whitesmoke;
+    background-color: lightgrey;
     margin: 10px 0;
 }
 
@@ -372,6 +372,25 @@ footer {
         display: inline-block;
         grid-row: 4/5;
         grid-column:1/4;
+        text-align: center;
+        background-color: orange;
+    }
+
+    .join p {
+        font-family: 'Oswald', sans-serif;
+        font-size: 1em;
+    }
+
+    .join:hover {
+        transform: scale(1.05);
+        transition: transform .7s ease;
+    }
+    
+
+    .join h3 {
+        color: white;
+        font-size: 2em;
+        line-height: 0;
     }
 
     .event {
@@ -383,15 +402,14 @@ footer {
 
     .weather {
         float: left;
-        width: auto;
+        width: 80%;
         grid-row: 5/6;
         grid-column:3/4;
-    }
-
-    .weather {
         padding: 0  10%;
         background-color:lightblue;
     }
+
+    
     .weather h3 {
         display:block;
         /* justify-content:space-between; */

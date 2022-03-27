@@ -46,12 +46,12 @@
 
         <div>
             <label for="">e-mail</label>
-            <input type="text" value="monica187@gmail.com">
+            <input type="text" id="email" placeholder="monica187@gmail.com">
         </div>
 
         <div>
             <label for="">Phone Number</label>
-            <input type="tel">
+            <input id="phone" type="tel" placeholder="208-206-3530">
         </div>
 
         <div>
@@ -64,7 +64,7 @@
             <br>
             <textarea id="business_des" name="Description" rows="4" cols="50"></textarea>
         </div>
-    </div>
+        </div>
 
         <div class="membership">
 
@@ -96,19 +96,33 @@
 
             <div class="container">
                 <button type="submit">Sign Up</button>
-                </div>
+            </div>
         </div>
-    </div>  
+    
 
         <input type="hidden" id="date" name="date" value="CurrentTime"> 
         <input type="hidden" id="time" name="time" value="CurrentDate">
+    </main>
 
-    </form>
 
     <footer>
+        <img class="footer_logo" src="images/rexburg-chamber-logo.jpg" alt="logo">
+
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6416.668963628406!2d-111.78776378994831!3d43.81407434253635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1644169348104!5m2!1sen!2sus" width="150" height="50" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <div class="footer_info">
+            <p>📧 info@rexburgcc.org</p>
+            <p>📞 208-206-3530</p>
+        </div>
+
+        <div class="footer_legal">
+        <p class='legal'>&copy; 2022 | Aizek Densley Mangrobang |WDD 230| Idaho </p>
+        <p id="modified"></p>
+        </div>
 
     </footer>
 
-    </main>
+    <script src="jscript/script.js"></script>
+    
 </body>
 </html>
