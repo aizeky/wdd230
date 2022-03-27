@@ -1,87 +1,87 @@
 {
     "businesses": [
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "Rexburg Flowers",
+            "address": "333 E 7th S Rexburg, Idaho 83440",
+            "phone": "208-287-3420",
+            "email": "flowers@gmail.edu",
             "imageurl": "https://picsum.photos/250/50?random=6"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
+            "name": "Madison Care",
+            "address": "450 E Main St Rexburg, Idaho 83440",
+            "phone": "208-359-6000",
             "email": "busnessname@byui.edu",
             "imageurl": "https://picsum.photos/250/50?random=7"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "Robert's Music",
+            "address": "1220 W Main St Rexburg, Idaho 83440",
+            "phone": "208-206-4221",
+            "email": "roberts-music@gmail.edu",
             "imageurl": "https://picsum.photos/250/50?random=8"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "Icon Photography",
+            "address": "146 W 7th N Rexburg, Idaho 83440",
+            "phone": "208-246-3389",
+            "email": "potos4youe@hotmail.com",
             "imageurl": "https://picsum.photos/250/50?random=1"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "BYU-I Gardens",
+            "address": "155 W Main St Rexburg, Idaho 83440",
+            "phone": "208-206-4122",
+            "email": "gardens@byui.edu",
             "imageurl": "https://picsum.photos/250/50?random=2"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "New Phong's",
+            "address": "199 W 3rd S Rexburg, Idaho 83440",
+            "phone": "208-487-3630",
+            "email": "phongs-resto@byui.edu",
             "imageurl": "https://picsum.photos/250/50?random=3"
         },
         {
-            "name": "Business name",
+            "name": "Rexburg Re-escape",
             "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "phone": "208-303-7173",
+            "email": "escape@re-escape.ecom",
             "imageurl": "https://picsum.photos/250/50?random=4"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "Love Olive Co",
+            "address": "155 E Main St Rexburg, Idaho 83440",
+            "phone": "208-2356-9874",
+            "email": "shoplove@yahoo.com",
             "imageurl": "https://picsum.photos/250/50?random=5"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "Circle of Love",
+            "address": "40 College Ave, Idaho 83440",
+            "phone": "208-656-1069",
+            "email": "lovebridal@gmail.com",
             "imageurl": "https://picsum.photos/250/50?random=9"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "Namaste Wellness",
+            "address": "160 W 2nd S Rexburg, Idaho 83440",
+            "phone": "208-206-8967",
+            "email": "namastespa@gmail.com",
             "imageurl": "https://picsum.photos/250/50?random=10"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
+            "name": "Original Thai",
+            "address": "10 E Main St Rexburg, Idaho 83440",
+            "phone": "208-359-9660",
             "email": "busnessname@byui.edu",
             "imageurl": "https://picsum.photos/250/50?random=11"
         },
         {
-            "name": "Business name",
-            "address": "160 W 5th S Rexburg, Idaho 83440",
-            "phone": "208-206-3530",
-            "email": "busnessname@byui.edu",
+            "name": "BYU-I Outdoor",
+            "address": "73 W 2nd S Rexburg, Idaho 83440",
+            "phone": "208-496-7337",
+            "email": "orc@byui.edu",
             "imageurl": "https://picsum.photos/250/50?random=12"
         }
 
