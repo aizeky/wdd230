@@ -1,32 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Playfair+Display:wght@400;600&display=swap');
 
-.ham {
-    display: block;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 250px;
-    grid-gap: 15px;
-}
-
-.gallery div {
-    width: 100%;
-    overflow: hidden;
-}
-
-.image {
-    height: 250px;
-    width: 365px;
-    overflow: hidden;
-}
-
-img {
-    width:auto;
-    overflow: hidden;
-    object-fit: fill;
-}
 
 header {
     display: grid;
@@ -44,12 +17,15 @@ date {
     font-family: 'Playfair Display', serif;
     margin: auto;
     margin-right: 20px;
+    
 }
 
 .logo {
     grid-column: 1/2;
     width: 200px;
 }
+
+
 
 ul {
     list-style: none;
@@ -66,14 +42,43 @@ li {
     font-family: 'Oswald', sans-serif;
 }
 
-.ham {
-    display: block;
+h1 {
+text-align: center;
 }
 
-h1 {
+
+button {
+    float: right;
+    padding: 15px 30px;
+    margin-top:20px auto;
+    background-color: orange;
+    color: white;
+    border: 3px darkorange;
+}
+
+h2 {
     font-family: 'Oswald', sans-serif;
-    color: orange;
     text-align: center;
+    color: orange;
+}
+h3 {
+    text-align: center;
+    font-size: 1em;
+}
+
+fieldset {
+    padding-top: 10px;
+    border: 1px solid lightgray;
+    margin: 10px;
+}
+
+textarea {
+    padding-bottom: 50px;
+}
+
+
+.ham {
+    display: block;
 }
 
 .responsive {
@@ -101,21 +106,27 @@ li a:hover {
     color: gray;
 }
 
-.gallery img:hover {
-    transform: scale(1.04);
-    transition: transform .7s ease;
-}
-
-.gallery div:hover {
-    box-shadow: 0 0 20px gray;
-}
-
 /* for Join Page */
+
+main {
+    padding: 0 30px;
+}
 
 label {
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Oswald', sans-serif;
 }
+
+textarea {
+    width: 250px;
+    margin: auto;
+    justify-content: center;
+}
+
+.join_form {
+    width: 100px;
+}
+
 
 .membership li {
     text-align: left;
@@ -148,21 +159,21 @@ footer {
     margin: 5px 0;
     padding: 5px 0;
     font-family: 'Oswald', sans-serif;
+    font-size: .8em;
 }
 
 .footer_legal p{
     margin: 0 auto;
     padding-top:10px;
+    font-size: .8em;
 }
 
-
 @media screen and (min-width: 600px) {
-
+   
     header {
         grid-template-columns: 50% 50%;
         padding-top: 20px;
     }
-
 
     .logo {
         margin:auto;
@@ -172,12 +183,12 @@ footer {
         text-align: right;
         margin: auto;
     }
-
-   
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    
+    main {
+        width: 70%;
+        margin: auto auto;
     }
+
 
     footer {
         grid-template-columns: 1fr 1fr 1fr;
@@ -206,27 +217,22 @@ footer {
     .footer_legal {
         grid-column: 1/4;
     }
+    
 }
 @media screen and (min-width: 850px) {
 
-    body {
-        width: 950px;
-        margin: auto;
-    }
-    
-    main {
-        width: 100%;
+    header {
+        grid-template-columns: 50% 50%;
+
     }
 
     .logo {
         grid-column: 1/2;
         margin-right: 0;
         justify-items: right;
-
     }
 
     date {
-        text-align: left;
         grid-column: 2/3;
         padding-left: 37px;
         text-align: left;
@@ -234,12 +240,14 @@ footer {
         margin: auto;
         margin-left: 0;
     }
-
-    .gallery {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 250px 250px 250px;
-        grid-gap: 15px;
+    
+    body {
+        width: 950px;
+        margin: auto;
+    }
+    
+    main {
+        width: 100%;
     }
     
     .ham {
@@ -258,17 +266,73 @@ footer {
         grid-column: 2/4;
         margin: 30px 0;
     }
-    
+
+    .join_form {
+        float: left;
+    }
+
+    .membership {
+        float: right;
+        width: 50%;
+    } 
+    label {
+        display: inline;
+        }
+        
+        input {
+       
+        display: inline-block;
+        width: 250px;
+        padding: 1rem;
+        }
+
+    #level1, #level2, #level3, #level4 {
+        width: 10px;
+    }
+
+    .container {
+        text-align: left;
+        padding: 30px;
+    }
+
+    button {
+        padding: 15px 30px;
+        background-color: orange;
+        color: white;
+        border: 3px darkorange;
+        float: right;
+    }
+
+
+    fieldset {
+        margin: 15px auto;
+        max-width: 500px;
+        text-align: center;
+    }
+
+    textarea {
+        padding: 35px;
+    }
+
+    button:hover {
+        transform: scale(1.1);
+        transition: transform .4s ease;
+    }
+
+    .form_container {
+        margin-left: 50px;
+    }
+
     footer {
         grid-template-columns: 20% 22% 20% 38%;
         grid-template-rows: 1fr;
-        max-width: 950px;
+        max-width: 1080px;
         padding-top: 30px;
+        position: relative;
     }
 
     .footer_info {
         grid-column: 3/4;
-        font-size: .8em;
     }
 
     .map {
@@ -278,8 +342,6 @@ footer {
     .footer_legal {
         grid-column: 4/5;
         margin: auto;
-        font-size: .8em;
     }
     
 }
-
