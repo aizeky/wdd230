@@ -1,0 +1,69 @@
+html {
+    width: 100%;
+}
+
+body {
+    margin: auto;
+    width:fit-content;
+    padding: 0 20px;
+}
+
+iframe {
+   width: fit-content;
+   margin: 0 auto;
+}
+
+div img {
+    width: 70%;
+}
+
+main {
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 400;
+}
+
+.cta_images {
+    display: flex;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px black solid;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+
+@media screen and (min-width: 540px) {
+    body {
+        max-width: 600px;
+    }
+
+    iframe {
+        width:fit-content;
+        /* height: 290px; */
+    }
+
+    
+}
+
+@media screen and (min-width: 900px) {
+    body {
+        max-width: 800px;
+    }
+
+    iframe {
+        width:650px;
+        height: 350px;
+    }
+
+    div img {
+        display:inline-flexbox;
+        max-width: 50%;
+    }
+    
+}
