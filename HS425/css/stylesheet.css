@@ -95,7 +95,7 @@ footer {
 
 @media screen and (min-width: 900px) {
     body {
-        max-width: 950px;
+        width: 950px;
     }
 
     iframe {
