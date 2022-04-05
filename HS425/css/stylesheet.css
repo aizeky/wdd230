@@ -99,7 +99,7 @@ footer {
     }
 
     iframe {
-        width:70%;
+        width: (body width);
         height: 380px;
     }
 

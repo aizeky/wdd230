@@ -1,0 +1,139 @@
+//Variables for change animation and colors of background, menu overlay, text and icons
+
+$transition-type: ease-in;
+$overlay-color: #6b5ad5;
+$texts-and-icons: #fff;
+$body-background: url(/Lesson14/images/blue.png);
+
+//ZOOM EFFECT ON HOVER MENU ICONS AND LINKS
+
+@keyframes zoom {
+	0%, 100% { transform: scale(1);}
+
+	50% { transform: scale(1.1);}
+}
+
+// SET BASIC CONTENT - HTML AND BODY 
+
+html, body {
+	overflow: hidden;
+	line-height: 1.5;
+	font-family: 'Montserrat', 'Arial', sans-serif;
+	color: $texts-and-icons;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+
+html, body, .full-menu, .content {
+	width: 100%;
+	height: 100%;
+}
+
+.full-menu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+}
+
+.content {
+	background-image: $body-background;
+}
+
+
+
+// SET BASIC CONTENT AND ANIMATION EFFECT- MENU OVERLAY
+
+.full-menu {
+	background-color: $overlay-color;
+	opacity: 0.5;
+	transform: translateX(100%);
+	transition: all 400ms $transition-type;
+    text-align: center;
+	position: fixed;
+
+	li {
+		font-size: 3em;
+		color: $texts-and-icons;
+		opacity: 0;
+		transform: translateY(2%);
+		transition: all 300ms $transition-type;
+		cursor: pointer;
+
+		&:after {
+			content: "";
+			position: absolute;
+		    height: 5px;
+		    width: 0%;
+		    left: 0;
+		    bottom: 0;
+		    background-color: $texts-and-icons;
+		    transition: width 200ms $transition-type;
+		}
+
+		&:hover:after { width: 100%;}
+	}
+
+	ul { list-style: none;}
+
+	&.active {
+		transform: translateX(0%);
+		opacity: 1;
+		z-index: 0;
+
+		.home { transition-delay: .3s;}
+
+		.wd { transition-delay: .4s;}
+
+		.gd { transition-delay: .5s;}
+
+		.contact { transition-delay: .6s;}
+
+		li {
+			opacity: 1;
+			transform: translateX(0%);
+
+			&:hover {
+				animation: zoom 200ms $transition-type;
+			}
+		}
+	}
+}
+
+// SET BASIC CONTENT AND ANIMATION EFFECT- HAMBURGUER MENU
+
+.hamburguer {
+	position: absolute;
+	width: 2em;
+	height: 2em;
+	margin: 3em;
+	z-index: 1;
+	cursor: pointer;
+
+	&:hover {
+		animation: zoom 300ms $transition-type;
+	}
+}
+
+.lines {
+	background-color: $texts-and-icons;
+	width: 100%;
+	height: 5px;
+	margin: 5px 0;
+	transition: all 450ms $transition-type;
+}
+
+// SET ANIMATION EFFECT - HAMBURGUER MENU CLOSED
+
+.close-hamburguer {
+	.lines { cursor: pointer;}
+
+	.line-top { transform: translateY(200%) rotate(45deg);}
+
+	.line-mid { opacity: 0;}
+
+	.line-bottom { transform: translateY(-200%) rotate(135deg);}
+}

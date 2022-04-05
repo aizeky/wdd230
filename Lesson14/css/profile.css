@@ -1,0 +1,21 @@
+.profile {
+    max-width: 500px;
+    text-align: right;
+}
+
+.content {
+	background-size: cover;
+	font-size: 1em;
+
+}
+
+body .content {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.full-menu, .content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
