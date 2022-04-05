@@ -28,8 +28,7 @@ html {
   width: 75%;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
-  transition: all 100ms ease-out;
-  position: relative;
+  /* transition: all 100ms ease-out; */
   border: 10px solid white;
 }
 
@@ -82,7 +81,6 @@ p {
         display: flex;
         -webkit-filter: grayscale(1);
         filter: grayscale(1);
-        transition: all 100ms ease-out;
         margin: 10px;
 
       }
@@ -120,10 +118,7 @@ p {
         justify-content: space-between;
         padding: 15px;
         margin-top: 40px;
-        margin-right:85px;
-        /* position: static; */
-        
-        
+        margin-right:85px;    
     }
 
     .gallery_container img {
@@ -131,9 +126,8 @@ p {
         display: block;
         -webkit-filter: grayscale(1);
         filter: grayscale(1);
-        transition: all 100ms ease-out;
         border: 10px solid white;
-        /* position: static; */
+        
       }
 
     p {
