@@ -3,7 +3,6 @@
 $transition-type: ease-in;
 $overlay-color: #6b5ad5;
 $texts-and-icons: #fff;
-$body-background: url(/Lesson14/images/blue.png);
 
 //ZOOM EFFECT ON HOVER MENU ICONS AND LINKS
 
@@ -25,6 +24,9 @@ html, body {
 html, body {
     margin: 0;
     padding: 0;
+	background-color: #1fd1f9;
+	background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+
   }  
 
 html, body, .full-menu, .content {
@@ -36,11 +38,18 @@ html, body, .full-menu, .content {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: fixed;
+}
+
+.full-menu a{
+	text-decoration: none;
+	color: white;
 }
 
 .content {
-	background-image: $body-background;
+	background-color: #1fd1f9;
+background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+
+
 }
 
 
@@ -136,4 +145,9 @@ html, body, .full-menu, .content {
 	.line-mid { opacity: 0;}
 
 	.line-bottom { transform: translateY(-200%) rotate(135deg);}
+
+	.gallery_container img{
+		visibility:hidden;
+	}
 }
+

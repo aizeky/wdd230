@@ -1,5 +1,7 @@
 body {
-    background-image: url(/Lesson14/images/blue\ -\ Copy.png);
+    background-color: #1fd1f9;
+    background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
+
     background-size:auto;
     background-attachment:fixed;
     overflow:visible;
@@ -7,6 +9,10 @@ body {
 
 html {
     overflow:scroll; 
+}
+
+.full-menu {
+    position: absolute;
 }
 
 .gd_section {
@@ -25,12 +31,13 @@ html {
 }
 
 .gallery_container img {
-  width: 75%;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-  /* transition: all 100ms ease-out; */
-  border: 10px solid white;
-}
+    width: 75%;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+    /* transition: all 100ms ease-out; */
+    border: 10px solid white;
+  }
+
 
 .gallery_container img:hover {
   transform: scale(1.02);
@@ -89,7 +96,7 @@ p {
 
 @media screen and (min-width: 900px) {
     body {
-        background-image: url(/Lesson14/images/blue.png);
+        background-image: linear-gradient(315deg, #1fd1f9 0%, #b621fe 74%);
         background-position: center;
         background-attachment:fixed;
         overflow: hidden;
@@ -132,6 +139,10 @@ p {
 
     p {
         width: 50%;
+    }
+
+    .full-menu {
+        display: fixed;
     }
 
 }
