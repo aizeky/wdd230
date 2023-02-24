@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+.wrapper {
+  padding: 0 20%;
+}
+
+.box {
+  background-color: navajowhite;
+}
+
+#result {
+  text-align: center;
+}
+#defaultIdealHours {
+  background-color: yellow;
+}
+
+li{
+  list-style: none;
+  text-align: center;
+}
+
+h2 {
+  max-width: 100%;
+}
