@@ -147,4 +147,9 @@ p {
 
 }
 
+.full-menu.active
+{
+  z-index: 1 !important;
+}
+
 
